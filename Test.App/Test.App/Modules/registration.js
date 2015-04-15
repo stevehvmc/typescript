@@ -6,6 +6,7 @@ var Sidekick;
     (function (Registration) {
         var Controllers;
         (function (Controllers) {
+            //@Route("/home", "/home.html")
             var Home = (function () {
                 function Home($scope) {
                     $scope.message = "hello, world";
@@ -13,7 +14,7 @@ var Sidekick;
                 return Home;
             })();
             Controllers.Home = Home;
-            //@Route("/when/", "/view.html")
+            //@Route("/profile", "/view.html")
             var Profile = (function () {
                 function Profile($scope) {
                     $scope.message = "hello, world";

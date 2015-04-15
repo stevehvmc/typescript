@@ -1,14 +1,14 @@
 ﻿/// <reference path="libs/angular.d.ts" />
 /// <reference path="sidekick.ts" />
 module Sidekick.Registration.Controllers {
-    @Route("/home", "/home.html")
+    //@Route("/home", "/home.html")
     export class Home implements IController {
         constructor($scope) {
             $scope.message = "hello, world";
         }
     }
 
-    @Route("/profile", "/view.html")
+    //@Route("/profile", "/view.html")
     export class Profile implements IController {
         constructor($scope) {
             $scope.message = "hello, world";
