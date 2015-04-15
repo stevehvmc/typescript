@@ -18,21 +18,21 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="index.html" />
     <Content Include="Modules\Views\Registration\Profile.html" />
     <Content Include="Modules\Views\Registration\Home.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Modules\Libs\angular.d.ts" />
     <TypeScriptCompile Include="Modules\Libs\angular.route.d.ts" />
     <TypeScriptCompile Include="Modules\Libs\jquery.d.ts" />
     <TypeScriptCompile Include="Modules\registration.ts" />
+    <TypeScriptCompile Include="Modules\common.ts" />
     <TypeScriptCompile Include="Modules\sidekick.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Profile.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

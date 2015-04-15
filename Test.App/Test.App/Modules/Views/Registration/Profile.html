@@ -1,5 +1,17 @@
-﻿profile
+﻿<button ng-click="load(1)" class="btn btn-default">load</button>
+<form ng-show="isEditing">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="first name" ng-model="model.firstName" />
+        <span class="help-block error-text" ng-if="ValidationResult.ModelState['model.firstName']">{{ValidationResult.ModelState['model.firstName']}}</span>
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="last name" ng-model="model.lastName" />
+        <span class="help-block error-text" ng-if="ValidationResult.ModelState['model.lastName']">{{ValidationResult.ModelState['model.lastName']}}</span>
+    </div>
+    <button class="btn btn-default" ng-click="save()">Save</button>
+    <button class="btn btn-default" ng-click="remove()">Delete</button>
+    <button class="btn btn-default" ng-click="validate()">Validate</button>
+</form>
 
-<button ng-click="clickMe()">click me</button>
-
-{{message}}
